@@ -1,0 +1,93 @@
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Reset some default browser styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #080c11; /* Set background color for the entire page */
+  color: #ffffff; /* Set text color for readability */
+  overflow-x: hidden; /* Prevent horizontal scroll if unnecessary */
+}
+
+/* Ensure body content starts below the fixed navbar */
+body {
+  padding-top: 0; /* Adjust this value based on navbar height if necessary */
+}
+
+.navbar {
+  background-color: transparent; /* Transparent background */
+  box-shadow: none; /* Remove shadow */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* Navbar link styles */
+.navbar__link {
+  color: #ffffff; /* White text color for light mode */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for color changes */
+}
+
+.navbar__link:hover {
+  color: #ccc; /* Change link color on hover */
+  background-color: #080c11; /* Subtle background color on hover */
+  border-radius: 5px; /* Rounded corners for the hover effect */
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] .navbar {
+  background-color: transparent; /* Transparent background */
+  box-shadow: none; /* Remove shadow */
+}
+
+[data-theme='dark'] .navbar__link {
+  color: #ffffff; /* White text color for dark mode */
+}
+
+[data-theme='dark'] .navbar__link:hover {
+  color: #bbb; /* Change link color on hover in dark mode */
+  background-color:#080c11; /* Subtle background color on hover in dark mode */
+  border-radius: 5px; /* Rounded corners for the hover effect */
+}
+
+
+/* Footer styling */
+.footer {
+  background: linear-gradient(to bottom, #080c11 0%, #000000 100%); /* Gradient from #14141A to black */
+  color: #ffffff; /* White text color */
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font to footer */
+  font-weight: 400; /* Regular weight */
+  padding: 20px; /* Add some padding */
+  text-align: center; /* Center the text */
+  position: relative; /* Ensure it stays at the bottom */
+  bottom: 0; /* Align to bottom */
+  width: 100%; /* Full width */
+}
+
+/* Dark mode adjustments for the footer */
+[data-theme='dark'] .footer {
+  background: linear-gradient(to bottom, #12131A 0%, #000000 100%); /* Gradient from #14141A to black */
+  color: #ffffff; /* White text color */
+}
+
+/* Header text styles for blog posts */
+.blog__container h1,
+.blog__container h2,
+.blog__container h3,
+.blog__container h4,
+.blog__container h5,
+.blog__container h6 {
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font to headers in blogs */
+  font-weight: 600; /* SemiBold weight for headers */
+  color: #ffffff; /* White text color for headers */
+}
+
+/* Link colors in various sections */
+a {
+  color: #8684FF; /* Primary link color */
+}
+
+a:hover {
+  color: #cccccc; /* Light gray link color on hover */
+}
