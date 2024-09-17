@@ -76,7 +76,7 @@ function HomepageHeader() {
                     <span className={clsx(styles.statusDot)}></span>
                     <span className={clsx(styles.statusText)}>{statusMessage1}</span>
               </div>
-              <div className={clsx(styles.statusIndicator, styles[statusClass2], styles.statusDocumentation)}>
+              <div className={clsx(styles.statusIndicator, styles[statusClass1], styles.statusDocumentation)}>
                       <span className={clsx(styles.statusDot)}></span>
                       <span className={clsx(styles.statusText)}>{statusMessage2}</span>
                </div>
