@@ -1,6 +1,28 @@
 /* Import the Poppins font */   
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
+/* Fade Up Animation */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End in place */
+  }
+}
+
+/* Fade In and Out Animation */
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 1; /* Fully visible */
+  }
+  50% {
+    opacity: 0.2; /* Partially faded */
+  }
+}
+
 .pageWrapper {
   position: relative;
   min-height: 100vh;
@@ -85,7 +107,7 @@
   font-weight: bold;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-  animation: fadeInUp 1s ease-out;
+  animation: fadeUp 1s ease-out; /* Apply the fadeUp animation */
   text-align: center; /* Center the title */
 }
 
@@ -101,14 +123,14 @@
   font-size: 1rem;
   font-weight: 200;
   margin-bottom: 2rem;
-  animation: fadeInUp 1.2s ease-out;
+  animation: fadeUp 1.2s ease-out; /* Apply the fadeUp animation */
 }
 
 .buttons {
   display: flex;
   justify-content: center;
   gap: 15px;
-  animation: fadeInUp 1.4s ease-out;
+  animation: fadeUp 1.4s ease-out; /* Apply the fadeUp animation */
 }
 
 .button {
@@ -120,7 +142,7 @@
   color: #f0f0f0;
   box-shadow: none; /* No glowing border */
   transition: color 0.3s ease, transform 0.3s ease;
-  animation: fadeInUp 1.4s ease-out;
+  animation: fadeUp 1.4s ease-out; /* Apply the fadeUp animation */
 }
 
 .button--primary {
@@ -170,6 +192,7 @@
   cursor: pointer;
   white-space: nowrap; /* Prevent text from wrapping */
   margin-right: auto; /* Push to the left */
+  animation: fadeUp 1.5s ease-out; /* Apply the fadeUp animation */
 }
 
 /* Status Indicator Alignment */
@@ -197,11 +220,13 @@
 /* Green Dot */
 .statusGreen .statusDot {
   background-color: #00FF00; /* Green */
+  animation: fadeInOut 1.5s ease-in-out infinite; /* Apply the fade animation */
 }
 
 /* Red Dot */
 .statusRed .statusDot {
   background-color: #FF0000; /* Red */
+  animation: fadeInOut 1.5s ease-in-out infinite; /* Apply the fade animation */
 }
 
 .statusText {
@@ -210,6 +235,7 @@
   color: #ffffff;
   /* Text splitting for mobile */
   word-wrap: break-word;
+  animation: fadeUp 1.5s ease-out; /* Apply the fadeUp animation */
 }
 
 /* Responsive Styles */
@@ -244,6 +270,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: fadeUp 1.5s ease-out; /* Apply the fadeUp animation */
 }
 
 /* Hover Effects */
