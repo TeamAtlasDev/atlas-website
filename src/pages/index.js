@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';  
+import React, { useEffect, useState } from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -76,7 +76,7 @@ function HomepageHeader() {
                   <span className={clsx(styles.statusDot)}></span>
                   <span className={clsx(styles.statusText)}>{statusMessage1}</span>
                 </div>
-                <div className={clsx(styles.statusIndicator, styles.statusDocumentation, styles[statusClass2])}> {/* Add statusDocumentation class */}
+                <div className={clsx(styles.statusIndicator, styles.statusDocumentation, styles[statusClass2])}>
                   <span className={clsx(styles.statusDot)}></span>
                   <span className={clsx(styles.statusText)}>{statusMessage2}</span>
                 </div>
