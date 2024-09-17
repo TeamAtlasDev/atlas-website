@@ -207,7 +207,7 @@
   margin-left: auto; /* Align to the right */
 }
 
-/* Show documentation status on desktop */
+/* Show documentation status on desktop, hide on mobile */
 .statusIndicators .statusDocumentation {
   display: flex; /* Ensure the documentation status is visible and aligned with other statuses */
   align-items: center; /* Center items vertically */
@@ -215,7 +215,12 @@
   animation: fadeUp 1.5s ease-out; /* Apply the fadeUp animation */
 }
 
-/* Status Indicator Styles */
+@media (max-width: 768px) {
+  .statusIndicators .statusDocumentation {
+    display: none; /* Hide the documentation status on mobile */
+  }
+}
+
 .statusIndicator {
   display: flex;
   align-items: center;
