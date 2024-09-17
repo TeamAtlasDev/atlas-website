@@ -63,7 +63,7 @@ const config = {
       defaultMode: 'dark',
       disableSwitch: true,
     },
-    image: 'atlaslogo.png',
+    image: 'atlasheader.jpg',
     navbar: {
       logo: {
         alt: 'Horizon Logo',
