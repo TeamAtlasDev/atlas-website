@@ -86,7 +86,7 @@
   font-style: italic;
   margin-top: 1px;
   transition: transform 0.3s ease;
-  animation: fadeInUp 1.2s ease-out;
+  animation: fadeUp 1.2s ease-out;
 }
 
 .newsBadge:hover {
@@ -220,13 +220,13 @@
 /* Green Dot */
 .statusGreen .statusDot {
   background-color: #00FF00; /* Green */
-  animation: fadeInOut 1.5s ease-in-out infinite; /* Apply the fade animation */
+  animation: fadeUp 1.5s ease-out, fadeInOut 1.5s ease-in-out infinite; /* Apply the fadeUp and fadeInOut animations */
 }
 
 /* Red Dot */
 .statusRed .statusDot {
   background-color: #FF0000; /* Red */
-  animation: fadeInOut 1.5s ease-in-out infinite; /* Apply the fade animation */
+  animation: fadeUp 1.5s ease-out, fadeInOut 1.5s ease-in-out infinite; /* Apply the fadeUp and fadeInOut animations */
 }
 
 .statusText {
