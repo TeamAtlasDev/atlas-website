@@ -116,6 +116,11 @@
   .heroTitle {
     font-size: 2rem; /* Adjust size for mobile */
   }
+
+  .buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Space between buttons */
+  }
 }
 
 .heroSubtitle {
@@ -133,6 +138,7 @@
   animation: fadeUp 1.4s ease-out; /* Apply the fadeUp animation */
 }
 
+/* Updated button styling to include email button */
 .button {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
@@ -141,7 +147,7 @@
   background-color: transparent;
   color: #f0f0f0;
   box-shadow: none; /* No glowing border */
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition: color 0.3s ease;
   animation: fadeUp 1.4s ease-out; /* Apply the fadeUp animation */
 }
 
@@ -154,7 +160,6 @@
 .button--primary:hover {
   color: #ffffff;
   background-color: #080c11;
-  transform: scale(1.1);
 }
 
 .button--secondary {
@@ -165,7 +170,6 @@
 
 .button--secondary:hover {
   color: #ffffff;
-  transform: scale(1.1);
 }
 
 /* Status Indicator Container */
@@ -201,6 +205,11 @@
   gap: 20px; /* Space between status indicators */
   flex-wrap: wrap; /* Wrap on smaller screens */
   margin-left: auto; /* Align to the right */
+}
+
+/* Only show Horizon services */
+.statusIndicators .statusDocumentation {
+  display: none; /* Hide documentation status */
 }
 
 .statusIndicator {
@@ -264,10 +273,8 @@ html, body {
   background-color: transparent; /* Transparent background */
   color: #ffffff; /* Text color */
   box-shadow: none; /* No shadow */
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition: color 0.3s ease; /* Smooth transitions */
   animation: fadeUp 1.4s ease-out; /* Apply the fadeUp animation */
   text-align: center;
   font-family: 'Poppins', sans-serif; /* Same font as other buttons */
 }
-
-
