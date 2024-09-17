@@ -54,7 +54,7 @@
   width: 100%;
   height: calc(100vh - 60px);
   background: url('/static/image.png') no-repeat center center / cover;
-  opacity: 0.09; /* Initial opacity */
+  opacity: 0.10; /* Initial opacity */
   z-index: 0; /* Ensure it is behind the content */
 }
 
