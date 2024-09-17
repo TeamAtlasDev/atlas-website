@@ -207,9 +207,9 @@
   margin-left: auto; /* Align to the right */
 }
 
-/* Show documentation status on desktop, hide on mobile */
 .statusIndicators .statusDocumentation {
   display: block;
+  animation: fadeUp 1.5s ease-out; /* Apply the fadeUp animation to documentation status */
 }
 
 @media (max-width: 768px) {
@@ -237,6 +237,7 @@
   background-color: #00FF00; /* Green */
   animation: fadeUp 1.5s ease-out, fadeInOut 1.5s ease-in-out infinite; /* Apply the fadeUp and fadeInOut animations */
 }
+
 
 /* Red Dot */
 .statusRed .statusDot {
