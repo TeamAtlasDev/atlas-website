@@ -72,14 +72,14 @@ function HomepageHeader() {
               <div className={clsx(styles.loadingText)}>Loading...</div>
             ) : (
               <>
-                <div className={clsx(styles.statusIndicator, styles[statusClass1])}>
-                  <span className={clsx(styles.statusDot)}></span>
-                  <span className={clsx(styles.statusText)}>{statusMessage1}</span>
-                </div>
-                <div className={clsx(styles.statusIndicator, styles.statusDocumentation, styles[statusClass2])}>
-                  <span className={clsx(styles.statusDot)}></span>
-                  <span className={clsx(styles.statusText)}>{statusMessage2}</span>
-                </div>
+               <div className={clsx(styles.statusIndicator, styles[statusClass1])}>
+                    <span className={clsx(styles.statusDot)}></span>
+                    <span className={clsx(styles.statusText)}>{statusMessage1}</span>
+              </div>
+              <div className={clsx(styles.statusIndicator, styles[statusClass2], styles.statusDocumentation)}>
+                      <span className={clsx(styles.statusDot)}></span>
+                      <span className={clsx(styles.statusText)}>{statusMessage2}</span>
+               </div>
               </>
             )}
           </div>
