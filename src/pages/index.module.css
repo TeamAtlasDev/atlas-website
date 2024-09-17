@@ -207,21 +207,19 @@
   margin-left: auto; /* Align to the right */
 }
 
+/* Show documentation status on desktop */
 .statusIndicators .statusDocumentation {
-  display: block;
-  animation: fadeUp 1.5s ease-out; /* Apply the fadeUp animation to documentation status */
+  display: flex; /* Ensure the documentation status is visible and aligned with other statuses */
+  align-items: center; /* Center items vertically */
+  gap: 10px; /* Space between dot and text */
+  animation: fadeUp 1.5s ease-out; /* Apply the fadeUp animation */
 }
 
-@media (max-width: 768px) {
-  .statusIndicators .statusDocumentation {
-    display: none; /* Hide the documentation status on mobile */
-  }
-}
-
+/* Status Indicator Styles */
 .statusIndicator {
   display: flex;
   align-items: center;
-  gap: 10px; /* Space between symbol and text */
+  gap: 10px; /* Space between dot and text */
 }
 
 .statusDot {
@@ -238,7 +236,6 @@
   animation: fadeUp 1.5s ease-out, fadeInOut 1.5s ease-in-out infinite; /* Apply the fadeUp and fadeInOut animations */
 }
 
-
 /* Red Dot */
 .statusRed .statusDot {
   background-color: #FF0000; /* Red */
@@ -249,8 +246,6 @@
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   color: #ffffff;
-  /* Text splitting for mobile */
-  word-wrap: break-word;
   animation: fadeUp 1.5s ease-out; /* Apply the fadeUp animation */
 }
 
