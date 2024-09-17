@@ -1,4 +1,4 @@
-/* Import the Poppins font */   
+/* Import the Poppins font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
 /* Fade Up Animation */
@@ -207,9 +207,15 @@
   margin-left: auto; /* Align to the right */
 }
 
-/* Only show Horizon services */
+/* Show documentation status on desktop, hide on mobile */
 .statusIndicators .statusDocumentation {
-  display: none; /* Hide documentation status */
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .statusIndicators .statusDocumentation {
+    display: none; /* Hide the documentation status on mobile */
+  }
 }
 
 .statusIndicator {
@@ -278,11 +284,3 @@ html, body {
   text-align: center;
   font-family: 'Poppins', sans-serif; /* Same font as other buttons */
 }
-
-/* Hide documentation status on mobile */
-@media (max-width: 768px) {
-  .statusIndicators .statusDocumentation {
-    display: none; /* Hide the documentation status on mobile */
-  }
-}
-
