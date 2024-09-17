@@ -264,7 +264,8 @@ html, body {
   background-color: transparent; /* Transparent background */
   color: #ffffff; /* Text color */
   box-shadow: none; /* No shadow */
-  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+  transition: color 0.3s ease, transform 0.3s ease;
+  animation: fadeUp 1.4s ease-out; /* Apply the fadeUp animation */
   text-align: center;
   font-family: 'Poppins', sans-serif; /* Same font as other buttons */
 }
