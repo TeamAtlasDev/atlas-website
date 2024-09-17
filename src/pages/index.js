@@ -61,7 +61,7 @@ function HomepageHeader() {
           <Link className={clsx(styles.button, styles.buttonSecondary)} href="https://horizonbot.xyz">
             Visit Horizon
           </Link>
-          <a href="mailto:info@teamatlas.dev" className={clsx(styles.emailButton)}>Contact</a> {/* Email button with emoji */}
+          <a href="mailto:info@teamatlas.dev" className={clsx(styles.emailButton)}>Email Contact</a> {/* Email button */}
         </div>
         <div className={clsx(styles.statusBox)}>
           <Link className={clsx(styles.viewMoreLink)} href="https://status.teamatlas.dev">
