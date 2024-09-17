@@ -278,3 +278,11 @@ html, body {
   text-align: center;
   font-family: 'Poppins', sans-serif; /* Same font as other buttons */
 }
+
+/* Hide documentation status on mobile */
+@media (max-width: 768px) {
+  .statusIndicators .statusDocumentation {
+    display: none; /* Hide the documentation status on mobile */
+  }
+}
+
