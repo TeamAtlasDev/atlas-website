@@ -52,7 +52,7 @@ function HomepageHeader() {
           Develop dreams into reality.<br />
         </Heading>
         <p className={clsx(styles.heroSubtitle)}>
-          Where ideas take flight and dreams become reality.
+          A group of friends and developers bringing dreams to light and watching them become reality.
         </p>
         <div className={clsx(styles.buttons)}>
           <Link className={clsx(styles.button, styles.buttonPrimary)} href="https://support.teamatlas.dev">
